@@ -107,8 +107,8 @@ SELECT * FROM TABLE(INFORMATION_SCHEMA.DATA_METRIC_FUNCTION_REFERENCES(
 SHOW DATA METRIC FUNCTIONS IN ACCOUNT;
   
 --Drop a DMF: Must get signature right for DMF or will get a “does not exist” error:
-DROP FUNCTION DQ_TUTORIAL_DB.SCH.DUPLICATE_COUNT_COMBO (table(STRING))
-DROP FUNCTION DQ_TUTORIAL_DB.SCH.daft_dmf4 (table(STRING, STRING)) -–e.g diff signature
+DROP FUNCTION YOUR_DATABASE.YOUR_SCHEMA.YOUR_CUSTOM_DMF (table(STRING))
+DROP FUNCTION YOUR_DATABASE.YOUR_SCHEMA.YOUR_CUSTOM_DMF (table(STRING, STRING)) -–e.g diff signature
 
 --View DMF results
 SELECT scheduled_time, measurement_time, table_name, metric_name, value
