@@ -6,7 +6,7 @@ Configured in yaml files for each model.
 
 At column level
 
-```yaml title="NOT NULL"  linenums="0" hl_lines="6"
+```yaml  linenums="0" hl_lines="6"
 columns:
     - name: your_column
     data_type: TEXT
@@ -20,7 +20,7 @@ columns:
 
 At column level
 
-```yaml title="NOT NULL"  linenums="0" hl_lines="6"
+```yaml linenums="0" hl_lines="6"
 columns:
     - name: your_column
     data_type: TEXT
@@ -33,7 +33,7 @@ columns:
 
 At model level - using package dbt-labs/dbt_utils
 
-```yaml title="NOT NULL"  linenums="0" hl_lines="6"
+```yaml linenums="0" hl_lines="6"
 models:
   - name: your_model
     tests:
@@ -48,7 +48,7 @@ models:
 
 At column level
 
-```yaml title="NOT NULL"  linenums="0" hl_lines="6"
+```yaml   linenums="0" hl_lines="6"
 columns:
     - name: your_column
       data_tests:
@@ -61,7 +61,7 @@ columns:
 
 At model level - using package dbt-labs/dbt_utils
 
-```yaml title="NOT NULL"  linenums="0" hl_lines="6"
+```yaml   linenums="0" hl_lines="6"
 models:
   - name: your_model
     tests:
@@ -73,7 +73,7 @@ models:
 
 At project folder level (in dbt_project.yml) - using calogica/dbt_expectations
 
-```yaml title="NOT NULL"  linenums="0" hl_lines="6"
+```yaml  linenums="0" hl_lines="6"
 models:
   your_project:
     your_sub_folder:
