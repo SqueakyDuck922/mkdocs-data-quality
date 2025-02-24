@@ -15,7 +15,8 @@
 
 
 ### Test the Freshness of your Raw Source Data
-
+- Freshness tests on raw sources
 
 ### Test Coverage: Test for Tests
-- In DBT enforce contracts for all DM models: enforce in dbt_project.yml for dm folder 
+- For each model test for existence of unique test 
+
